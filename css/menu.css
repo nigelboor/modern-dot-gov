@@ -1,0 +1,114 @@
+/* 
+    Created on : 17-Aug-2014, 15:09:17
+    Author     : digital@gloucestershire.gov.uk
+    License    : Unlicense, http://unlicense.org/
+*/
+
+.gcc-ac-container {
+    width: 100%;
+    margin: 0px;
+    text-align: left;
+    border-bottom: #909090 1px solid;
+}
+.gcc-ac-container label {
+    font-family: Geneva, Verdana, Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.10);
+    padding: 0.4em;
+    margin-bottom: 0.4em;
+    position: relative;
+    z-index: 20;
+    display: block;
+    height: auto;
+    cursor: pointer;
+    font-size: 1.20em;
+    background: #0356a3;
+    box-shadow: 
+        0px 0px 0px 1px rgba(155,155,155,0.3), 
+        1px 0px 0px 0px rgba(255,255,255,0.9) inset, 
+        0px 2px 2px rgba(0,0,0,0.1);
+}
+.gcc-ac-container label:hover {
+    background: #00819D;
+}
+.gcc-ac-container input:checked + label,
+.gcc-ac-container input:checked + label:hover {
+    background: #00819D;
+    color: #ffffff;
+    text-shadow: 0px 1px 1px rgba(255,255,255, 0.6);
+    box-shadow: 
+        0px 0px 0px 1px rgba(155,155,155,0.3), 
+        0px 2px 2px rgba(0,0,0,0.1);
+}
+.gcc-ac-container label:hover:after,
+.gcc-ac-container input:checked + label:hover:after {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 13px;
+    top: 7px;
+    background: transparent url(../images/arrow_down.png) no-repeat center center;	
+}
+.gcc-ac-container input:checked + label:hover:after {
+    background-image: url(../images/arrow_up.png);
+}
+.gcc-ac-container input {
+    display: none;
+}
+.gcc-ac-container article {
+    background: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    height: 0px;
+    position: relative;
+    z-index: 10;
+    -webkit-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -moz-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -o-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    -ms-transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.gcc-ac-container article p {
+    font-style: italic;
+    color: #777;
+    line-height: 23px;
+    font-size: 14px;
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+.gcc-ac-container input:checked ~ article {
+    -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    -ms-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+    box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+.gcc-ac-container input:checked ~ article.gcc-ac-small {
+    height: auto;
+    margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+    .gcc-ac-container {
+        border: solid 1px #C6C6C6;
+    }
+    .gcc-ac-container input:checked ~ article {
+        box-shadow: none;
+    }
+    .gcc-ac-container input ~ article.gcc-ac-small, .gcc-ac-container input:checked ~ article.gcc-ac-small {
+        height: auto;
+    }
+    .gcc-ac-container label:hover, 
+    .gcc-ac-container input:checked + label,
+    .gcc-ac-container input:checked + label:hover,
+    .gcc-ac-container label:hover, 
+    .gcc-ac-container label:hover:after,
+    .gcc-ac-container input:checked + label:hover:after {
+        background-color: #0356a3;
+        background-image: none;
+    }
+    .gcc-ac-small {
+        padding: 0.2em;
+    }
+}
