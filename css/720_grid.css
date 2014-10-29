@@ -5,29 +5,29 @@
 
 /* Containers */
 body { font-size: 0.875em; padding: 0; }
-.grid{ margin:0 auto; padding: 0 10px; width:700px; }
-.row{ clear:left; }
+.gcc-grid{ margin:0 auto; padding: 0 10px; width:700px; }
+.gcc-row{ clear:left; }
 
 /* Slots Setup */
-.slot-0,.slot-1,.slot-2,.slot-3,.slot-4,.slot-5,.slot-0-1,.slot-0-1-2,.slot-0-1-2-3,.slot-0-1-2-3-4,.slot-0-1-2-3-4-5,.slot-1-2,.slot-1-2-3,.slot-1-2-3-4,.slot-1-2-3-4-5,.slot-2-3,.slot-2-3-4,.slot-2-3-4-5,.slot-3-4,.slot-3-4-5,.slot-4-5,.slot-6,.slot-7,.slot-8,.slot-9,.slot-6-7,.slot-6-7-8,.slot-6-7-8-9,.slot-7-8,.slot-7-8-9,.slot-8-9{ display:inline; float:left; margin-left:20px; }
+.gcc-slot-0,.gcc-slot-1,.gcc-slot-2,.gcc-slot-3,.gcc-slot-4,.gcc-slot-5,.gcc-slot-0-1,.gcc-slot-0-1-2,.gcc-slot-0-1-2-3,.gcc-slot-0-1-2-3-4,.gcc-slot-0-1-2-3-4-5,.gcc-slot-1-2,.gcc-slot-1-2-3,.gcc-slot-1-2-3-4,.gcc-slot-1-2-3-4-5,.gcc-slot-2-3,.gcc-slot-2-3-4,.gcc-slot-2-3-4-5,.gcc-slot-3-4,.gcc-slot-3-4-5,.gcc-slot-4-5,.gcc-slot-6,.gcc-slot-7,.gcc-slot-8,.gcc-slot-9,.gcc-slot-6-7,.gcc-slot-6-7-8,.gcc-slot-6-7-8-9,.gcc-slot-7-8,.gcc-slot-7-8-9,.gcc-slot-8-9{ display:inline; float:left; margin-left:20px; }
 
 /* 6-Col Grid Sizes */
-.slot-0,.slot-1,.slot-2,.slot-3,.slot-4,.slot-5{ width:100px; } /* Sixths */
-.slot-0-1,.slot-1-2,.slot-2-3,.slot-3-4,.slot-4-5{ width:220px; } /* Thirds */
-.slot-0-1-2-3,.slot-1-2-3-4,.slot-2-3-4-5{ width:460px; } /* Two-Thirds */
-.slot-0-1-2-3-4,.slot-1-2-3-4-5{ width:580px; } /* Five-Sixths */
+.gcc-slot-0,.gcc-slot-1,.gcc-slot-2,.gcc-slot-3,.gcc-slot-4,.gcc-slot-5{ width:100px; } /* Sixths */
+.gcc-slot-0-1,.gcc-slot-1-2,.gcc-slot-2-3,.gcc-slot-3-4,.gcc-slot-4-5{ width:220px; } /* Thirds */
+.gcc-slot-0-1-2-3,.gcc-slot-1-2-3-4,.gcc-slot-2-3-4-5{ width:460px; } /* Two-Thirds */
+.gcc-slot-0-1-2-3-4,.gcc-slot-1-2-3-4-5{ width:580px; } /* Five-Sixths */
 
 /* 4-Col Grid Sizes */
-.slot-6,.slot-7,.slot-8,.slot-9{ width:160px; } /* Quarters */
-.slot-6-7-8,.slot-7-8-9{ width:520px; } /* Three-Quarters */
+.gcc-slot-6,.gcc-slot-7,.gcc-slot-8,.gcc-slot-9{ width:160px; } /* Quarters */
+.gcc-slot-6-7-8,.gcc-slot-7-8-9{ width:520px; } /* Three-Quarters */
 
 /* 6-Col/4-Col Shared Grid Sizes */
-.slot-0-1-2,.slot-1-2-3,.slot-2-3-4,.slot-3-4-5, .slot-6-7,.slot-7-8,.slot-8-9{ width:340px; } /* Halves */
-.slot-0-1-2-3-4-5, .slot-6-7-8-9{ width: 100%; } /* Full-Width */
+.gcc-slot-0-1-2,.gcc-slot-1-2-3,.gcc-slot-2-3-4,.gcc-slot-3-4-5, .gcc-slot-6-7,.gcc-slot-7-8,.gcc-slot-8-9{ width:340px; } /* Halves */
+.gcc-slot-0-1-2-3-4-5, .gcc-slot-6-7-8-9{ width: 100%; } /* Full-Width */
 
 /* Zeroing Out Leftmost Slot Margins */
-.slot-0,.slot-0-1,.slot-0-1-2,.slot-0-1-2-3,.slot-0-1-2-3-4,.slot-0-1-2-3-4-5,.slot-6,.slot-6-7,.slot-6-7-8,.slot-6-7-8-9,.slot-1 .slot-1,.slot-1-2 .slot-1,.slot-1-2 .slot-1-2,.slot-1-2-3 .slot-1,.slot-1-2-3 .slot-1-2,.slot-1-2-3 .slot-1-2-3,.slot-1-2-3-4 .slot-1,.slot-1-2-3-4 .slot-1-2,.slot-1-2-3-4 .slot-1-2-3,.slot-1-2-3-4 .slot-1-2-3-4,.slot-1-2-3-4-5 .slot-1,.slot-1-2-3-4-5 .slot-1-2,.slot-1-2-3-4-5 .slot-1-2-3,.slot-1-2-3-4-5 .slot-1-2-3-4,.slot-1-2-3-4-5 .slot-1-2-3-4-5,.slot-2 .slot-2,.slot-2-3 .slot-2,.slot-2-3 .slot-2-3,.slot-2-3-4 .slot-2,.slot-2-3-4 .slot-2-3,.slot-2-3-4 .slot-2-3-4,.slot-2-3-4-5 .slot-2,.slot-2-3-4-5 .slot-2-3,.slot-2-3-4-5 .slot-2-3-4,.slot-2-3-4-5 .slot-2-3-4-5,.slot-3 .slot-3,.slot-3-4 .slot-3,.slot-3-4 .slot-3-4,.slot-3-4-5 .slot-3,.slot-3-4-5 .slot-3-4,.slot-3-4-5 .slot-3-4-5,.slot-4 .slot-4,.slot-4-5 .slot-4,.slot-4-5 .slot-4-5,.slot-5 .slot-5,.slot-7 .slot-7,.slot-7-8 .slot-7,.slot-7-8 .slot-7-8,.slot-7-8-9 .slot-7,.slot-7-8-9 .slot-7-8,.slot-7-8-9 .slot-7-8-9,.slot-8 .slot-8,.slot-8-9 .slot-8,.slot-8-9 .slot-8-9{ margin-left:0 !important; } /* Important is to avoid repeating this in larger screen css files */
+.gcc-slot-0,.gcc-slot-0-1,.gcc-slot-0-1-2,.gcc-slot-0-1-2-3,.gcc-slot-0-1-2-3-4,.gcc-slot-0-1-2-3-4-5,.gcc-slot-6,.gcc-slot-6-7,.gcc-slot-6-7-8,.gcc-slot-6-7-8-9,.gcc-slot-1 .gcc-slot-1,.gcc-slot-1-2 .gcc-slot-1,.gcc-slot-1-2 .gcc-slot-1-2,.gcc-slot-1-2-3 .gcc-slot-1,.gcc-slot-1-2-3 .gcc-slot-1-2,.gcc-slot-1-2-3 .gcc-slot-1-2-3,.gcc-slot-1-2-3-4 .gcc-slot-1,.gcc-slot-1-2-3-4 .gcc-slot-1-2,.gcc-slot-1-2-3-4 .gcc-slot-1-2-3,.gcc-slot-1-2-3-4 .gcc-slot-1-2-3-4,.gcc-slot-1-2-3-4-5 .gcc-slot-1,.gcc-slot-1-2-3-4-5 .gcc-slot-1-2,.gcc-slot-1-2-3-4-5 .gcc-slot-1-2-3,.gcc-slot-1-2-3-4-5 .gcc-slot-1-2-3-4,.gcc-slot-1-2-3-4-5 .gcc-slot-1-2-3-4-5,.gcc-slot-2 .gcc-slot-2,.gcc-slot-2-3 .gcc-slot-2,.gcc-slot-2-3 .gcc-slot-2-3,.gcc-slot-2-3-4 .gcc-slot-2,.gcc-slot-2-3-4 .gcc-slot-2-3,.gcc-slot-2-3-4 .gcc-slot-2-3-4,.gcc-slot-2-3-4-5 .gcc-slot-2,.gcc-slot-2-3-4-5 .gcc-slot-2-3,.gcc-slot-2-3-4-5 .gcc-slot-2-3-4,.gcc-slot-2-3-4-5 .gcc-slot-2-3-4-5,.gcc-slot-3 .gcc-slot-3,.gcc-slot-3-4 .gcc-slot-3,.gcc-slot-3-4 .gcc-slot-3-4,.gcc-slot-3-4-5 .gcc-slot-3,.gcc-slot-3-4-5 .gcc-slot-3-4,.gcc-slot-3-4-5 .gcc-slot-3-4-5,.gcc-slot-4 .gcc-slot-4,.gcc-slot-4-5 .gcc-slot-4,.gcc-slot-4-5 .gcc-slot-4-5,.gcc-slot-5 .gcc-slot-5,.gcc-slot-7 .gcc-slot-7,.gcc-slot-7-8 .gcc-slot-7,.gcc-slot-7-8 .gcc-slot-7-8,.gcc-slot-7-8-9 .gcc-slot-7,.gcc-slot-7-8-9 .gcc-slot-7-8,.gcc-slot-7-8-9 .gcc-slot-7-8-9,.gcc-slot-8 .gcc-slot-8,.gcc-slot-8-9 .gcc-slot-8,.gcc-slot-8-9 .gcc-slot-8-9{ margin-left:0 !important; } /* Important is to avoid repeating this in larger screen css files */
 
 /* Row Clearfix */
-.row:after{ visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; }
-.row{ zoom:1; }
+.gcc-row:after{ visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; }
+.gcc-row{ zoom:1; }

@@ -94,34 +94,14 @@ a, a:link, a:visited {
 a:hover, a:active {
     background: none;
     border-color: #00a9c2;
-    color: #fff;
+    color: #0000ff;
 }
 
 img {
     max-width: 100%;
 }
 
-#logo {
-    padding-bottom: 0;
-    text-decoration: none;
-    border: 0px;
-}
 
-.rmenu {
-    text-align: right;
-}
-
-.lmenu {
-    text-align: left;
-}
-
-.grid {
-    padding: 0 20px;
-}
-
-.row {
-    margin-bottom: 1em;
-}
 
 button {
     border-right: 1px solid #0087a0;
@@ -136,17 +116,40 @@ button {
     padding: 0.5em 0.75em;
 }
 
-.social-logo {
+#gcc-logo {
+    padding-bottom: 0;
+    text-decoration: none;
+    border: 0px;
+}
+
+.gcc-rmenu {
+    text-align: right;
+}
+
+.gcc-lmenu {
+    text-align: left;
+}
+
+.gcc-grid {
+    padding: 0 20px;
+}
+
+.gcc-row {
+    margin-bottom: 1em;
+}
+
+.gcc-social-logo {
     padding: 0 1px 0 1px;
     text-decoration: none;
     border-bottom: none;
     border: 0px;
 }
 
-.breadcrumbs {
+.gcc-breadcrumbs {
     text-align: left;
     background: #fcfcfc;
     border-bottom: 1px solid #ccc;
+    border-top: 2px solid #aaa;
     max-width: none;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -154,7 +157,7 @@ button {
     background: linear-gradient(#fff, #fcfcfc);
 }
 
-.footer {
+.gcc-footer {
     background: #0055a4;
     color: #fff;
     margin: 0;
@@ -162,6 +165,12 @@ button {
     padding: 1em 0 1em 0;
 }
 
-.footer a {
+.gcc-footer a {
     color: #fff;
+}
+
+.gcc-footer a:hover, .gcc-footer a:active {
+    background: none;
+    border-color: #00a9c2;
+    color: #ffffcc;
 }
