@@ -3,9 +3,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
+	font: inherit;
+	font-size: 100%;
 }
 /* HTML5 display-role reset for older browsers */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
@@ -14,15 +14,15 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
 }
 
 body {
+	margin-top: 1em;
 	color: #444;
 	font-family: Helvetica, Arial, sans-serif;
 	line-height: 1.5em;
-	margin-top: 1em;
 }
 
 ol,ul {
-	list-style: square;
 	margin: 0 0 0.5em;
+	list-style: square;
 }
 
 blockquote,q {
@@ -36,13 +36,13 @@ blockquote:before,blockquote:after,q:before,q:after {
 
 code {
 	background-color: #f4f4f4;
-	font-family: Menlo, Courier, monospace;
 	font-size: 0.875em;
+	font-family: Menlo, Courier, monospace;
 }
 
 table {
-	border-collapse: collapse;
 	border-spacing: 0;
+	border-collapse: collapse;
 }
 
 strong {
@@ -56,10 +56,10 @@ p {
 }
 
 h1,h2,h3,h4,h5,h6 {
-	font-family: Geneva, Tahoma, sans-serif;
-	font-weight: normal;
-	line-height: 1.2em;
 	padding: 0.5em 0 0.25em;
+	font-weight: normal;
+	font-family: Geneva, Tahoma, sans-serif;
+	line-height: 1.2em;
 }
 
 h1 {
@@ -83,14 +83,14 @@ h5,h6 {
 }
 
 a,a:link,a:visited {
+	border-bottom: 1px solid #11bad3;
 	color: #11bad3;
 	text-decoration: none;
-	border-bottom: 1px solid #11bad3;
 }
 
 a:hover,a:active {
-	background: none;
 	border-color: #00a9c2;
+	background: none;
 	color: #0000ff;
 }
 
@@ -99,22 +99,22 @@ img {
 }
 
 button {
+	display: inline-block;
+	margin: 0.5em 0;
+	padding: 0.5em 0.75em;
 	border-right: 1px solid #0087a0;
 	border-bottom: 1px solid #0087a0;
 	background: #11bad3;
 	color: #fff;
-	display: inline-block;
-	font-family: Geneva, Tahoma, sans-serif;
-	font-size: 1.2em;
 	font-weight: bold;
-	margin: 0.5em 0;
-	padding: 0.5em 0.75em;
+	font-size: 1.2em;
+	font-family: Geneva, Tahoma, sans-serif;
 }
 
 #gcc-logo {
 	padding-bottom: 0;
-	text-decoration: none;
 	border: 0px;
+	text-decoration: none;
 }
 
 .gcc-rmenu {
@@ -135,29 +135,29 @@ button {
 
 .gcc-social-logo {
 	padding: 0 1px 0 1px;
-	text-decoration: none;
-	border-bottom: none;
 	border: 0px;
+	border-bottom: none;
+	text-decoration: none;
 }
 
 .gcc-breadcrumbs {
-	text-align: left;
-	background: #fcfcfc;
-	border-bottom: 1px solid #ccc;
-	border-top: 2px solid #aaa;
-	max-width: none;
+	margin-bottom: 1em;
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	margin-bottom: 1em;
+	max-width: none;
+	border-top: 2px solid #aaa;
+	border-bottom: 1px solid #ccc;
+	background: #fcfcfc;
 	background: linear-gradient(#fff, #fcfcfc);
+	text-align: left;
 }
 
 .gcc-footer {
+	margin: 0;
+	padding: 1em 0 1em 0;
+	max-width: none;
 	background: #0055a4;
 	color: #fff;
-	margin: 0;
-	max-width: none;
-	padding: 1em 0 1em 0;
 }
 
 .gcc-footer a {
@@ -165,7 +165,7 @@ button {
 }
 
 .gcc-footer a:hover,.gcc-footer a:active {
-	background: none;
 	border-color: #00a9c2;
+	background: none;
 	color: #ffffcc;
 }

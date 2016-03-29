@@ -5,8 +5,8 @@
 
 /* Containers */
 body {
-	font-size: 100%;
 	padding: 0;
+	font-size: 100%;
 }
 
 .gcc-grid {
@@ -67,12 +67,12 @@ slot-0-1-2-3-4-5,.gcc-slot-6-7-8-9 {
 
 /* Row Clearfix */
 .gcc-row:after {
-	visibility: hidden;
 	display: block;
-	font-size: 0;
-	content: " ";
+	visibility: hidden;
 	clear: both;
 	height: 0;
+	content: " ";
+	font-size: 0;
 }
 
 .gcc-row {
