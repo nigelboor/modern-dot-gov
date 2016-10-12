@@ -5,8 +5,8 @@
 
 /* Containers */
 body {
-	font-size: 0.875em;
 	padding: 0;
+	font-size: 0.875em;
 }
 
 .gcc-grid {
@@ -67,12 +67,12 @@ body {
 
 /* Row Clearfix */
 .gcc-row:after {
-	visibility: hidden;
 	display: block;
-	font-size: 0;
-	content: " ";
+	visibility: hidden;
 	clear: both;
 	height: 0;
+	content: " ";
+	font-size: 0;
 }
 
 .gcc-row {
